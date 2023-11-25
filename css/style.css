@@ -1,0 +1,480 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+    }
+
+#logo {
+    position: absolute;
+    transform: scale(0.7);
+    top: -0.5rem;
+    left: -0.5rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end; /* Plasserer elementene helt til høyre */
+    align-items: center; /* Justerer listeelementene til bunnen av containeren */
+    height: 100%; /* Sørger for at hele høyden av containeren brukes */
+  }
+
+  .navbar li {
+    list-style: none;
+    margin: 40px 15px 5px 0; /* Juster margen for å endre avstanden mellom elementene */
+    padding: 0;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    display: inline-block; /* Gjør lenken til en blokk for å kunne sette bredde og fylle fargen */
+  }
+
+  .navbar a.contact-link {
+    padding: 17px;
+    background-color: #e6bd43;
+    font-weight: bold;
+}
+
+.navbar a.contact-link:hover {
+    color: #e6bd43; /* Bytt tekstfarge */
+    background-color: #000; /* Bytt bakgrunnsfarge */
+}
+
+.navbar a.selected {
+    font-weight: bold;
+    text-decoration: underline #e6bd43; /* Gul strek under teksten */
+}
+
+.video-section {
+    position: relative;
+    height: 100vh; /* Set the height as per your design */
+    top: 35px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000; /* Text color */
+}
+
+.overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: #e6bd43; /* Button color */
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cta-button:hover {
+    color: #e6bd43; /* Bytt tekstfarge */
+    background-color: #000; /* Bytt bakgrunnsfarge */
+}
+
+.text-section {
+    text-align: center; /* Sentrer teksten horisontalt */
+    position: absolute;
+    top: 95%; /* Juster denne verdien etter behov for å plassere teksten vertikalt */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; /* Tekstfarge */
+}
+
+.text-section h2 {
+    font-size: 1.8rem; /* Juster fontstørrelsen etter behov */
+    margin-bottom: 15px;
+}
+
+.text-section p {
+    font-size: 1.2rem; /* Juster fontstørrelsen etter behov */
+    margin-bottom: 30px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center; /* Sentrer vertikalt */
+    background-color: #e6bd43; /* Gul bakgrunnsfarge */
+    padding: 50px; /* Legg til eller endre padding etter behov */
+}
+
+.about-section img {
+    max-width: 100%; /* Sørger for at bildet ikke overstiger containerens bredde */
+    margin-right: 20px; /* Legg til eller endre marginen etter behov */
+}
+
+.about-text {
+    flex: 1; /* Bruker all tilgjengelig plass i containeren */
+}
+
+.about-text h3 {
+    font-size: 1.5rem; /* Juster fontstørrelsen etter behov */
+    margin-bottom: 10px; /* Legg til eller endre marginen etter behov */
+}
+
+.about-text p {
+    font-size: 1.2rem; /* Juster fontstørrelsen etter behov */
+    margin: 0; /* Fjerner standardmarginen fra p-elementet */
+}
+
+.cta-button-black-border {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: #e6bd43; /* Button color */
+    border: 2px solid #000; /* Svart kant */
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px; /* Legg til eller endre marginen etter behov */
+}
+
+.cta-button-black-border:hover {
+    color: #e6bd43; /* Bytt tekstfarge */
+    background-color: #000; /* Bytt bakgrunnsfarge */
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 20px; /* Juster toppmargen etter behov */
+    margin-top: 60px;
+    font-size: 2.5rem; /* Juster tekststørrelsen etter behov */
+}
+
+.icon-section {
+    display: flex;
+    justify-content: space-around; /* Juster mellomrommet mellom ikonene etter behov */
+    margin-top: 50px; /* Legg til eller endre toppmargen etter behov */
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons i {
+    font-size: 3rem; /* Juster ikonstørrelsen etter behov */
+    margin-bottom: 10px; /* Legg til eller endre bunnmarginen etter behov */
+}
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 5px; /* Legg til eller endre bunnmarginen etter behov */
+}
+
+.newsletter-section {
+    background-color: #ccc; /* Grå bakgrunnsfarge, endre etter behov */
+    text-align: center;
+    padding: 40px 20px; /* Juster padding etter behov */
+}
+
+.newsletter-form {
+    margin-top: 20px; /* Legg til eller endre toppmargen etter behov */
+}
+
+.newsletter-form input {
+    padding: 10px;
+    margin-right: 10px; /* Juster høyremargen etter behov */
+    width: 200px; /* Juster bredden etter behov */
+}
+
+.newsletter-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: #e6bd43; /* Ny farge for nyhetsbrev-knappen, endre etter behov */
+    border: 2px #e6bd43;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #252525; /* Bakgrunnsfargen til footer */
+    color: white; /* Tekstfargen i footer */
+    display: flex;
+    justify-content: space-between; /* Fordel elementene jevnt langs bredden */
+    padding: 20px; /* Legg til padding etter behov */
+}
+
+#footer-logo {
+    transform: scale(0.7);
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons i {
+    margin-right: 30px; /* Juster avstanden mellom ikonene etter behov */
+    margin-top: 4rem;
+    color: white; /* Farge på sosiale medie-ikoner */
+    font-size: 30px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.scroll-to-top a {
+    text-decoration: none;
+    color: white;
+}
+
+.portfolio-section {
+    position: relative;
+    margin-top: 50px; /* Legg til ønsket toppmarg her */
+}
+
+.portfolio-section img {
+    width: 100%;
+    max-height: 400px; /* Sett ønsket maksimal høyde */
+    height: auto;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+}
+
+.portfolio-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.explore-jobs-section {
+    text-align: left; /* Sentrer teksten */
+    margin: 15px 0 20px 40px; /* Legg til margin etter behov */
+}
+
+.explore-jobs-title {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.explore-jobs-title::after {
+    content: '';
+    display: block;
+    height: 3px; /* Tykkelsen på streken */
+    width: 325%; /* Lengden på streken, juster etter behov */
+    background-color: #e6bd43; /* Gul strekfarge */
+    position: absolute;
+    bottom: -20px; /* Plasseringen av streken under teksten */
+    left: 0%; /* Juster startposisjonen av streken etter behov */
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: flex-start; /* Juster mellomrommet mellom knappene etter behov */
+    margin: 40px 0 20px 40px; /* Juster topp- og bunnmargen etter behov */
+}
+
+.portfolio-button {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff; /* Button color */
+    padding: 8px 13px;
+    margin-right: 15px; /* Legg til høyremargen mellom knappene */
+    border: 1px solid #000;
+    font-size: 1rem; /* Juster fontstørrelsen etter behov */
+}
+
+
+.portfolio-button:hover {
+    color: #e6bd43; /* Bytt tekstfarge ved hover */
+    background-color: #000; /* Bytt bakgrunnsfarge ved hover */
+}
+
+.branding-section {
+    text-align: left; /* Sentrer teksten */
+    margin: 15px 0 20px 40px; /* Legg til margin etter behov */
+}
+
+.branding-title {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.branding-title::after {
+    content: '';
+    display: block;
+    height: 3px; /* Tykkelsen på streken */
+    width: 775%; /* Lengden på streken, juster etter behov */
+    background-color: #e6bd43; /* Gul strekfarge */
+    position: absolute;
+    bottom: -20px; /* Plasseringen av streken under teksten */
+    left: 0%; /* Juster startposisjonen av streken etter behov */
+}
+
+
+.branding-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.branding-image {
+    flex: 1 0 25%; /* Fire bilder ved siden av hverandre */
+    margin-right: 10px;
+    position: relative;
+}
+
+.branding-image img {
+    width: 95%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.branding-image:hover img {
+    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+}
+
+.branding-image p {
+    position: relative;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px; /* Juster toppmargin etter behov */
+    font-size: 1.2rem; /* Endre størrelsen etter behov */
+    transform: translateY(0); /* Legg til denne linjen for å tilbakestille vertikal transformasjon */
+    transition: transform 0.3s ease-in-out; /* Legg til overgangseffekten */
+}
+
+.branding-image:hover p {
+    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+}
+
+.branding-image-large {
+    flex: 1 0 100%; /* Ett stort bilde under de tre første */
+    margin-top: 20px;
+}
+
+.branding-image-large img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.branding-image-large:hover img {
+    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+}
+
+.branding-image-large p {
+    position: relative;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px; /* Juster toppmargin etter behov */
+    font-size: 1.2rem; /* Endre størrelsen etter behov */
+    transform: translateY(0); /* Legg til denne linjen for å tilbakestille vertikal transformasjon */
+    transition: transform 0.3s ease-in-out; /* Legg til overgangseffekten */
+}
+
+.branding-image-large:hover p {
+    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+}
+
+.design-section {
+    text-align: left; /* Sentrer teksten */
+    margin: 15px 0 20px 40px; /* Legg til margin etter behov */
+}
+
+.design-title {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.design-title::after {
+    content: '';
+    display: block;
+    height: 3px; /* Tykkelsen på streken */
+    width: 775%; /* Lengden på streken, juster etter behov */
+    background-color: #e6bd43; /* Gul strekfarge */
+    position: absolute;
+    bottom: -20px; /* Plasseringen av streken under teksten */
+    left: 0%; /* Juster startposisjonen av streken etter behov */
+}
+
+.design-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.design-image {
+    flex: 1 0 25%; /* Fire bilder ved siden av hverandre */
+    margin-right: 10px;
+    position: relative;
+}
+
+.design-image img {
+    width: 95%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.design-image:hover img {
+    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+}
+
+.design-image p {
+    position: relative;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px; /* Juster toppmargin etter behov */
+    font-size: 1.2rem; /* Endre størrelsen etter behov */
+    transform: translateY(0); /* Legg til denne linjen for å tilbakestille vertikal transformasjon */
+    transition: transform 0.3s ease-in-out; /* Legg til overgangseffekten */
+}
+
+
+.design-image:hover p {
+    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+}
