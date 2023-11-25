@@ -478,3 +478,63 @@ footer {
 .design-image:hover p {
     transform: scale(1.1); /* Forstørrende animasjon ved hover */
 }
+
+.development-section {
+    text-align: left; /* Sentrer teksten */
+    margin: 15px 0 20px 40px; /* Legg til margin etter behov */
+}
+
+.development-title {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.development-title::after {
+    content: '';
+    display: block;
+    height: 3px; /* Tykkelsen på streken */
+    width: 775%; /* Lengden på streken, juster etter behov */
+    background-color: #e6bd43; /* Gul strekfarge */
+    position: absolute;
+    bottom: -20px; /* Plasseringen av streken under teksten */
+    left: 0%; /* Juster startposisjonen av streken etter behov */
+}
+
+.development-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.development-image {
+    flex: 1 0 25%; /* Fire bilder ved siden av hverandre */
+    margin-right: 10px;
+    position: relative;
+}
+
+.development-image img {
+    width: 95%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.development-image:hover img {
+    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+}
+
+.development-image p {
+    position: relative;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px; /* Juster toppmargin etter behov */
+    font-size: 1.2rem; /* Endre størrelsen etter behov */
+    transform: translateY(0); /* Legg til denne linjen for å tilbakestille vertikal transformasjon */
+    transition: transform 0.3s ease-in-out; /* Legg til overgangseffekten */
+}
+
+
+.development-image:hover p {
+    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+}
