@@ -13,14 +13,14 @@ body {
 
   .navbar {
     display: flex;
-    justify-content: flex-end; /* Plasserer elementene helt til høyre */
-    align-items: center; /* Justerer listeelementene til bunnen av containeren */
-    height: 100%; /* Sørger for at hele høyden av containeren brukes */
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 100%; 
   }
 
   .navbar li {
     list-style: none;
-    margin: 40px 15px 5px 0; /* Juster margen for å endre avstanden mellom elementene */
+    margin: 40px 15px 5px 0; 
     padding: 0;
   }
 
@@ -28,7 +28,7 @@ body {
     text-decoration: none;
     color: #000;
     position: relative;
-    display: inline-block; /* Gjør lenken til en blokk for å kunne sette bredde og fylle fargen */
+    display: inline-block; 
   }
 
   .navbar a.contact-link {
@@ -38,18 +38,18 @@ body {
 }
 
 .navbar a.contact-link:hover {
-    color: #e6bd43; /* Bytt tekstfarge */
-    background-color: #000; /* Bytt bakgrunnsfarge */
+    color: #e6bd43; 
+    background-color: #000; 
 }
 
 .navbar a.selected {
     font-weight: bold;
-    text-decoration: underline #e6bd43; /* Gul strek under teksten */
+    text-decoration: underline #e6bd43
 }
 
 .video-section {
     position: relative;
-    height: 100vh; /* Set the height as per your design */
+    height: 100vh;
     top: 35px;
     overflow: hidden;
 }
@@ -66,7 +66,7 @@ video {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #000; /* Text color */
+    color: #000; 
 }
 
 .overlay h1 {
@@ -74,7 +74,7 @@ video {
     margin-bottom: 20px;
 }
 
-.overlay p {
+.overlay article {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
@@ -84,59 +84,59 @@ video {
     padding: 20px;
     text-decoration: none;
     color: #000;
-    background-color: #e6bd43; /* Button color */
+    background-color: #e6bd43; 
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 .cta-button:hover {
-    color: #e6bd43; /* Bytt tekstfarge */
-    background-color: #000; /* Bytt bakgrunnsfarge */
+    color: #e6bd43;
+    background-color: #000; 
 }
 
 .text-section {
-    text-align: center; /* Sentrer teksten horisontalt */
+    text-align: center; 
     position: absolute;
-    top: 95%; /* Juster denne verdien etter behov for å plassere teksten vertikalt */
+    top: 95%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000; /* Tekstfarge */
+    color: #000; 
 }
 
 .text-section h2 {
-    font-size: 1.8rem; /* Juster fontstørrelsen etter behov */
+    font-size: 1.8rem; 
     margin-bottom: 15px;
 }
 
 .text-section p {
-    font-size: 1.2rem; /* Juster fontstørrelsen etter behov */
+    font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
 .about-section {
     display: flex;
-    align-items: center; /* Sentrer vertikalt */
-    background-color: #e6bd43; /* Gul bakgrunnsfarge */
-    padding: 50px; /* Legg til eller endre padding etter behov */
+    align-items: center;
+    background-color: #e6bd43; 
+    padding: 50px; 
 }
 
 .about-section img {
-    max-width: 100%; /* Sørger for at bildet ikke overstiger containerens bredde */
-    margin-right: 20px; /* Legg til eller endre marginen etter behov */
+    max-width: 100%;
+    margin-right: 20px;
 }
 
 .about-text {
-    flex: 1; /* Bruker all tilgjengelig plass i containeren */
+    flex: 1;
 }
 
 .about-text h3 {
-    font-size: 1.5rem; /* Juster fontstørrelsen etter behov */
-    margin-bottom: 10px; /* Legg til eller endre marginen etter behov */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .about-text p {
-    font-size: 1.2rem; /* Juster fontstørrelsen etter behov */
-    margin: 0; /* Fjerner standardmarginen fra p-elementet */
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 .cta-button-black-border {
@@ -144,16 +144,16 @@ video {
     padding: 20px;
     text-decoration: none;
     color: #000;
-    background-color: #e6bd43; /* Button color */
-    border: 2px solid #000; /* Svart kant */
+    background-color: #e6bd43;
+    border: 2px solid #000;
     font-weight: bold;
     font-size: 1.1rem;
-    margin-top: 10px; /* Legg til eller endre marginen etter behov */
+    margin-top: 10px;
 }
 
 .cta-button-black-border:hover {
-    color: #e6bd43; /* Bytt tekstfarge */
-    background-color: #000; /* Bytt bakgrunnsfarge */
+    color: #e6bd43;
+    background-color: #000;
 }
 
 .title-section {
@@ -164,45 +164,43 @@ video {
 }
 
 .section-title {
-    margin-bottom: 20px; /* Juster toppmargen etter behov */
+    margin-bottom: 20px;
     margin-top: 60px;
-    font-size: 2.5rem; /* Juster tekststørrelsen etter behov */
+    font-size: 2.5rem;
 }
 
 .icon-section {
     display: flex;
-    justify-content: space-around; /* Juster mellomrommet mellom ikonene etter behov */
-    margin-top: 50px; /* Legg til eller endre toppmargen etter behov */
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
-.icons {
+.service-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-icon figure {
+    width: calc(50% - 20px);
+    margin: 10px;
     text-align: center;
-}
-
-.icons i {
-    font-size: 3rem; /* Juster ikonstørrelsen etter behov */
-    margin-bottom: 10px; /* Legg til eller endre bunnmarginen etter behov */
-}
-
-.icons h3 {
-    font-weight: bold;
-    margin-bottom: 5px; /* Legg til eller endre bunnmarginen etter behov */
 }
 
 .newsletter-section {
-    background-color: #ccc; /* Grå bakgrunnsfarge, endre etter behov */
+    background-color: #ccc;
     text-align: center;
-    padding: 40px 20px; /* Juster padding etter behov */
+    padding: 40px 20px;
 }
 
 .newsletter-form {
-    margin-top: 20px; /* Legg til eller endre toppmargen etter behov */
+    margin-top: 20px;
 }
 
 .newsletter-form input {
     padding: 10px;
-    margin-right: 10px; /* Juster høyremargen etter behov */
-    width: 200px; /* Juster bredden etter behov */
+    margin-right: 10px;
+    width: 200px;
 }
 
 .newsletter-button {
@@ -210,18 +208,18 @@ video {
     padding: 10px 20px;
     text-decoration: none;
     color: #000;
-    background-color: #e6bd43; /* Ny farge for nyhetsbrev-knappen, endre etter behov */
+    background-color: #e6bd43; 
     border: 2px #e6bd43;
     font-weight: bold;
     font-size: 1rem;
 }
 
 footer {
-    background-color: #252525; /* Bakgrunnsfargen til footer */
-    color: white; /* Tekstfargen i footer */
+    background-color: #252525;
+    color: white; 
     display: flex;
-    justify-content: space-between; /* Fordel elementene jevnt langs bredden */
-    padding: 20px; /* Legg til padding etter behov */
+    justify-content: space-between; 
+    padding: 20px;
 }
 
 #footer-logo {
@@ -238,9 +236,9 @@ footer {
 }
 
 .social-icons i {
-    margin-right: 30px; /* Juster avstanden mellom ikonene etter behov */
+    margin-right: 30px; 
     margin-top: 4rem;
-    color: white; /* Farge på sosiale medie-ikoner */
+    color: white;
     font-size: 30px;
 }
 
@@ -262,12 +260,12 @@ footer {
 
 .portfolio-section {
     position: relative;
-    margin-top: 50px; /* Legg til ønsket toppmarg her */
+    margin-top: 50px;
 }
 
 .portfolio-section img {
     width: 100%;
-    max-height: 400px; /* Sett ønsket maksimal høyde */
+    max-height: 400px;
     height: auto;
 }
 
@@ -286,8 +284,8 @@ footer {
 }
 
 .explore-jobs-section {
-    text-align: left; /* Sentrer teksten */
-    margin: 15px 0 20px 40px; /* Legg til margin etter behov */
+    text-align: left;
+    margin: 15px 0 20px 40px;
 }
 
 .explore-jobs-title {
@@ -299,39 +297,39 @@ footer {
 .explore-jobs-title::after {
     content: '';
     display: block;
-    height: 3px; /* Tykkelsen på streken */
-    width: 325%; /* Lengden på streken, juster etter behov */
-    background-color: #e6bd43; /* Gul strekfarge */
+    height: 3px;
+    width: 325%;
+    background-color: #e6bd43;
     position: absolute;
-    bottom: -20px; /* Plasseringen av streken under teksten */
-    left: 0%; /* Juster startposisjonen av streken etter behov */
+    bottom: -20px;
+    left: 0%;
 }
 
 .portfolio-buttons {
     display: flex;
-    justify-content: flex-start; /* Juster mellomrommet mellom knappene etter behov */
-    margin: 40px 0 20px 40px; /* Juster topp- og bunnmargen etter behov */
+    justify-content: flex-start;
+    margin: 40px 0 20px 40px;
 }
 
 .portfolio-button {
     text-decoration: none;
     color: #000;
-    background-color: #fff; /* Button color */
+    background-color: #fff;
     padding: 8px 13px;
-    margin-right: 15px; /* Legg til høyremargen mellom knappene */
+    margin-right: 15px;
     border: 1px solid #000;
-    font-size: 1rem; /* Juster fontstørrelsen etter behov */
+    font-size: 1rem;
 }
 
 
 .portfolio-button:hover {
-    color: #e6bd43; /* Bytt tekstfarge ved hover */
-    background-color: #000; /* Bytt bakgrunnsfarge ved hover */
+    color: #e6bd43;
+    background-color: #000;
 }
 
 .branding-section {
-    text-align: left; /* Sentrer teksten */
-    margin: 15px 0 20px 40px; /* Legg til margin etter behov */
+    text-align: left;
+    margin: 15px 0 20px 40px;
 }
 
 .branding-title {
@@ -343,12 +341,12 @@ footer {
 .branding-title::after {
     content: '';
     display: block;
-    height: 3px; /* Tykkelsen på streken */
-    width: 775%; /* Lengden på streken, juster etter behov */
-    background-color: #e6bd43; /* Gul strekfarge */
+    height: 3px;
+    width: 775%;
+    background-color: #e6bd43;
     position: absolute;
-    bottom: -20px; /* Plasseringen av streken under teksten */
-    left: 0%; /* Juster startposisjonen av streken etter behov */
+    bottom: -20px;
+    left: 0%;
 }
 
 
@@ -359,9 +357,11 @@ footer {
 }
 
 .branding-image {
-    flex: 1 0 25%; /* Fire bilder ved siden av hverandre */
+    flex: 1 0 calc((350px - 30px) / 4);
     margin-right: 10px;
     position: relative;
+    max-width: 350px;
+    min-width: 200px;
 }
 
 .branding-image img {
@@ -371,7 +371,7 @@ footer {
 }
 
 .branding-image:hover img {
-    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+    transform: scale(1.1);
 }
 
 .branding-image p {
@@ -379,29 +379,31 @@ footer {
     text-align: left;
     color: #000;
     font-weight: bold;
-    margin-top: 10px; /* Juster toppmargin etter behov */
-    font-size: 1.2rem; /* Endre størrelsen etter behov */
-    transform: translateY(0); /* Legg til denne linjen for å tilbakestille vertikal transformasjon */
-    transition: transform 0.3s ease-in-out; /* Legg til overgangseffekten */
+    margin-top: 10px;
+    font-size: 1.2rem;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
 }
 
 .branding-image:hover p {
-    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+    transform: scale(1.1);
 }
 
 .branding-image-large {
-    flex: 1 0 100%; /* Ett stort bilde under de tre første */
+    flex: 1 0 100%;
     margin-top: 20px;
 }
 
 .branding-image-large img {
     width: 50%;
     height: auto;
+    max-width: 350px;
+    min-width: 200px;
     transition: transform 0.3s ease-in-out;
 }
 
 .branding-image-large:hover img {
-    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+    transform: scale(1.1);
 }
 
 .branding-image-large p {
@@ -409,19 +411,19 @@ footer {
     text-align: left;
     color: #000;
     font-weight: bold;
-    margin-top: 10px; /* Juster toppmargin etter behov */
-    font-size: 1.2rem; /* Endre størrelsen etter behov */
-    transform: translateY(0); /* Legg til denne linjen for å tilbakestille vertikal transformasjon */
-    transition: transform 0.3s ease-in-out; /* Legg til overgangseffekten */
+    margin-top: 10px;
+    font-size: 1.2rem;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
 }
 
 .branding-image-large:hover p {
-    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+    transform: scale(1.1);
 }
 
 .design-section {
-    text-align: left; /* Sentrer teksten */
-    margin: 15px 0 20px 40px; /* Legg til margin etter behov */
+    text-align: left;
+    margin: 15px 0 20px 40px;
 }
 
 .design-title {
@@ -433,22 +435,24 @@ footer {
 .design-title::after {
     content: '';
     display: block;
-    height: 3px; /* Tykkelsen på streken */
-    width: 775%; /* Lengden på streken, juster etter behov */
-    background-color: #e6bd43; /* Gul strekfarge */
+    height: 3px;
+    width: 775%;
+    background-color: #e6bd43;
     position: absolute;
-    bottom: -20px; /* Plasseringen av streken under teksten */
-    left: 0%; /* Juster startposisjonen av streken etter behov */
+    bottom: -20px;
+    left: 0%;
 }
 
 .design-images {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    max-width: 350px;
+    min-width: 200px;
 }
 
 .design-image {
-    flex: 1 0 25%; /* Fire bilder ved siden av hverandre */
+    flex: 1 0 25%;
     margin-right: 10px;
     position: relative;
 }
@@ -460,7 +464,7 @@ footer {
 }
 
 .design-image:hover img {
-    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+    transform: scale(1.1);
 }
 
 .design-image p {
@@ -468,20 +472,20 @@ footer {
     text-align: left;
     color: #000;
     font-weight: bold;
-    margin-top: 10px; /* Juster toppmargin etter behov */
-    font-size: 1.2rem; /* Endre størrelsen etter behov */
-    transform: translateY(0); /* Legg til denne linjen for å tilbakestille vertikal transformasjon */
-    transition: transform 0.3s ease-in-out; /* Legg til overgangseffekten */
+    margin-top: 10px;
+    font-size: 1.2rem;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
 }
 
 
 .design-image:hover p {
-    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+    transform: scale(1.1);
 }
 
 .development-section {
-    text-align: left; /* Sentrer teksten */
-    margin: 15px 0 20px 40px; /* Legg til margin etter behov */
+    text-align: left;
+    margin: 15px 0 20px 40px;
 }
 
 .development-title {
@@ -493,22 +497,24 @@ footer {
 .development-title::after {
     content: '';
     display: block;
-    height: 3px; /* Tykkelsen på streken */
-    width: 775%; /* Lengden på streken, juster etter behov */
-    background-color: #e6bd43; /* Gul strekfarge */
+    height: 3px;
+    width: 775%;
+    background-color: #e6bd43;
     position: absolute;
-    bottom: -20px; /* Plasseringen av streken under teksten */
-    left: 0%; /* Juster startposisjonen av streken etter behov */
+    bottom: -20px;
+    left: 0%;
 }
 
 .development-images {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    max-width: 350px;
+    min-width: 200px;
 }
 
 .development-image {
-    flex: 1 0 25%; /* Fire bilder ved siden av hverandre */
+    flex: 1 0 25%;
     margin-right: 10px;
     position: relative;
 }
@@ -520,7 +526,7 @@ footer {
 }
 
 .development-image:hover img {
-    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+    transform: scale(1.1);
 }
 
 .development-image p {
@@ -528,13 +534,183 @@ footer {
     text-align: left;
     color: #000;
     font-weight: bold;
-    margin-top: 10px; /* Juster toppmargin etter behov */
-    font-size: 1.2rem; /* Endre størrelsen etter behov */
-    transform: translateY(0); /* Legg til denne linjen for å tilbakestille vertikal transformasjon */
-    transition: transform 0.3s ease-in-out; /* Legg til overgangseffekten */
+    margin-top: 10px;
+    font-size: 1.2rem;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
 }
 
 
 .development-image:hover p {
-    transform: scale(1.1); /* Forstørrende animasjon ved hover */
+    transform: scale(1.1);
+}
+
+.about-section {
+    position: relative;
+    text-align: left;
+}
+
+.about-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50px;
+    right: -150px;
+    bottom: 145px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.company-name,
+.about-title,
+.about-text{
+    text-align: left; 
+}
+
+.company-name {
+    font-size: 1.5rem;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.cta-button-yellow {
+    display: block;
+    width: fit-content;
+    padding: 15px 20px;
+    margin-top: 15px;
+    background-color: #e6bd43;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button-yellow:hover {
+    color: #e6bd43;
+    background-color: #000;
+}
+
+.clients-section {
+    background-color: #e6bd43;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.clients-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clients-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.client-logos img {
+    width: 80px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-title {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact-form,
+.contact-info {
+    flex: 1; 
+    max-width: 48%; 
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.send-button {
+    background-color: #e6bd43;
+    color: #000;
+    padding: 15px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    color: #e6bd43;
+    background-color: #000;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+i {
+    margin-right: 10px; 
+}
+
+.map-section {
+    margin-top: 20px;
 }
